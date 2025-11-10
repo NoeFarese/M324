@@ -1,0 +1,1 @@
+Wenn man nicht will, dass die befehle ausgegeben werden, muss man @ vor jeden befehl setzen
