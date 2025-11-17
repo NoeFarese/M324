@@ -29,9 +29,9 @@ class TestFile(unittest.TestCase):
 
     def test_read_from_file(self):
         with open(self.test_file, 'w', encoding='utf-8') as f:
-            f.write("Sample Text")
+            f.write("Bodycam off since vietnam")
         content = File.read_from_file(self.test_file)
-        self.assertEqual(content, "Sample Text")
+        self.assertEqual(content, "Bodycam off since vietnam")
 
 
 if __name__ == "__main__":
