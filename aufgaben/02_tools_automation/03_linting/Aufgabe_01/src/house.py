@@ -7,7 +7,7 @@ class House:
 
     def set_name(self, name):
         if type(name) is not str:
-            raise Exception("name must be a string")
+            raise ValueError("name must be a string")
 
         self.name = name
 
