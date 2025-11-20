@@ -5,7 +5,7 @@ from src.db import Db
 from src.models import User
 
 class TestDb(unittest.TestCase):
-    MONGO_IMAGE = "mongo:7.0"
+    MONGO_IMAGE = "mongo:latest"
     MONGO_PORT = 27017
 
     def setUp(self):
