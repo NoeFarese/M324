@@ -8,10 +8,9 @@ headers = {'Accept': 'text/plain'}
 response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
-    joke = response.text
-    print("Joke:", joke)
+    print("Dad Joke:", response.text)
 else:
-    print("Failed to fetch joke. Status code:", response.status_code)
+    print("oh oh... failed to fetch dad joke!")
 
 
 a = np.array([1, 2, 3])
