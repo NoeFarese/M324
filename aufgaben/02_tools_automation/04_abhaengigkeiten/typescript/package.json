@@ -1,0 +1,16 @@
+{
+  "name": "ts-dadjoke-dayjs",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dayjs": "^1.11.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
