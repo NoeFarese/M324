@@ -1,0 +1,10 @@
+stages:
+  - show
+
+list_repository_files:
+  stage: show
+  image: ubuntu
+  script:
+    - apt-get update
+    - apt-get install -y tree
+    - tree -a
