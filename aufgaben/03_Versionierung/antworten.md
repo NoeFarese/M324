@@ -101,3 +101,14 @@ Diese Vorbereitungen sind notwendig, um Konflikte, Build-Fehler und instabile Zu
 
 ### 9 Beschreibe die Befehle für diesen Vorgang:
 ![img_1.png](aufgabe9.png)
+
+### Merge Conflict Aufgabe
+# 10.1 Mit welchem Befehl werden die Branches gemergt?
+``git checkout ux/friendly-text``
+
+``git merge ux/session-end``
+
+# 10.2 Dokumentiere, wie der Merge Konflikt behoben wird, sodass der Merge letztendlich erfolgreich durchgeführt wurde.
+Von beiden Seiten die Änderungen reinnehmen.
+
+Dann ``git add greet.py`` machen und git commit (automatische merge-commit message ovn git)
