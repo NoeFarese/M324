@@ -1,10 +1,10 @@
+include:
+  - local: ci/list_repository_files.yml
+  - local: ci/2_stages_2_jobs_log.yml
+  - local: ci/different_images_demo.yml
+
 stages:
   - show
-
-list_repository_files:
-  stage: show
-  image: ubuntu
-  script:
-    - apt-get update
-    - apt-get install -y tree
-    - tree -a
+  - build
+  - test
+  - demo

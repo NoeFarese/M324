@@ -47,11 +47,21 @@ Zusätzlich sollten Merge-Konflikte vorab geprüft und wenn möglich bereits im 
 Diese Vorbereitungen sind notwendig, um Konflikte, Build-Fehler und instabile Zustände im Ziel-Branch zu vermeiden und die Integrität des Repositories sicherzustellen.
 
 ### 8 Beschreibe die Befehle für diesen Vorgang:
-![img.png](img.png)
+![img.png](aufgabe8.png)
 
 ``git checkout main``
 
 ``git pull``
+
+``git add <changed files>``
+
+``git commit -m "commit 0"``
+
+``git add <changed files>``
+
+``git commit -m "commit 1``
+
+``git push``
 
 ---
 
@@ -61,13 +71,13 @@ Diese Vorbereitungen sind notwendig, um Konflikte, Build-Fehler und instabile Zu
 
 ``git add .``
 
-``git commit -m "change 1"``
-
----
+``git commit -m "commit 2"``
 
 ``git add .``
 
-``git commit -m "change 2"``
+``git commit -m "change 3"``
+
+``git push``
 
 ---
 
@@ -81,3 +91,13 @@ Diese Vorbereitungen sind notwendig, um Konflikte, Build-Fehler und instabile Zu
 
 ``git branch -d develop/gui``
 
+---
+
+``git add <changes files>``
+
+``git commit -m "commit 5"``
+
+``git push``
+
+### 9 Beschreibe die Befehle für diesen Vorgang:
+![img_1.png](aufgabe9.png)
