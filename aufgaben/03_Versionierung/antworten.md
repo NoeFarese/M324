@@ -131,12 +131,12 @@ Kurz: Jeder Release ist ein Commit, aber nicht jeder Commit ist ein Release.
 Release Tags werden sinnvollerweise als **annotated Tags** mit einer Versionsnummer erstellt.  
 Standard ist **Semantic Versioning (SemVer)**.
 
-### Beispielhafte Release Tags
+#### Beispielhafte Release Tags
 - `v1.0.0`
 - `v1.2.3`
 - `v2.0.0`
 
-### Optional (praxisnah)
+#### Optional (praxisnah)
 - `v1.1.0-beta`
 - `v2.0.1-hotfix`
 
@@ -145,3 +145,56 @@ Standard ist **Semantic Versioning (SemVer)**.
 - Commit = technisch
 - Release = fachlich + versioniert + dokumentiert
 - Tags = eindeutig, versioniert, stabil
+
+### 4.3 Erstelle ein Release von einem beliebigen Projekt
+#### Schreibe einen sinnvollen Release Note mit zwei neuen Features und zwei Bugfixes.
+**Schritte**
+
+1. Öffne dein Projekt in GitLab
+
+2. Links im Menü: Deploy → Releases
+
+3. Oben rechts: New release
+
+4. Felder ausfüllen:
+- Tag name: v1.0.0
+- Release title: Version 1.0.0
+- Target branch: main
+
+### 4.4 Erstelle einen Upcoming Release für den nächsten Monat.
+#### Schreibe einen sinnvollen Release Note mit zwei neuen Features.
+**Schritte**
+
+1. Deploy → Releases
+2. New release
+3. Felder ausfüllen:
+- Tag name: v1.1.0
+- Release title: Upcoming Release v1.1.0
+- Target branch: main
+- Release date: nächster Monat
+
+4. ⚠️ Wichtig: Checkbox “Set as upcoming release” aktivieren
+
+### 4.5 Ergänze dem Upcoming Release mit einem zusätzlichen Feature.
+#### Finde heraus, wie ein Release geändert werden kann.
+**Schritte**
+
+1. Deploy -> Releases
+2. Upcoming Release auswählen
+3. Oben rechts: Edit release
+4. Release Notes erweitern
+5. save changes
+
+### 4.6 Lösche den Upcoming Release.
+#### Finde heraus, wie ein Release gelöscht werden kann.
+**Schritte**
+
+1. Deploy → Releases
+2. Upcoming Release öffnen
+3. Edit release
+4. Ganz unten: Delete release
+5. Bestätigen
+
+⚠️ Wichtig:
+Der Tag bleibt bestehen, wenn du ihn nicht separat löschst
+Tag löschen geht über Repository → Tags
