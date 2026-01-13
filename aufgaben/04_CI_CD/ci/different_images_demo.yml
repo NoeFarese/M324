@@ -1,0 +1,22 @@
+stages:
+    - demo
+
+default:
+    image: ubuntu
+
+hi_alpine:
+    stage: demo
+    image: alpine
+    script:
+        - echo "hi by alpine"
+
+hi_busybox:
+    stage: demo
+    image: busybox
+    script:
+        - echo "hi by busybox"
+
+hi_default:
+    stage: demo
+    script:
+      - echo "hi by ubuntu"

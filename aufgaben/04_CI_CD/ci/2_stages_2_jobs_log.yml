@@ -1,0 +1,19 @@
+build_job_1:
+  stage: build
+  script:
+    - echo 'Stage build | Job job_1'
+
+build_job_2:
+  stage: build
+  script:
+    - echo 'Stage build | Job job_2'
+
+test_job_1:
+  stage: test
+  script:
+    - echo 'Stage test | Job job_1'
+
+test_job_2:
+  stage: test
+  script:
+    - echo 'Stage test | Job job_2'
